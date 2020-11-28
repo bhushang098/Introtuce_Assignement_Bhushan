@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_as_tb"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_margin="3dp"
+        android:textStyle="bold"
+        android:text="Introtuce Assign.. (Bhushan)"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_as_tb"
+        android:id="@+id/tbl_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/primary"
+        app:tabIndicatorColor="@color/primary"
+        app:tabIndicatorHeight="4dp"
+        app:tabBackground="@color/white"
+        app:tabMode="fixed">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tbl_users"
+        android:id="@+id/vpg_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</RelativeLayout>
